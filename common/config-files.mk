@@ -20,10 +20,11 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/config/nfc/nfcee_access.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfcee_access.xml
+    $(COMMON_PATH)/config/nfc/nfcee_access.xml:system/etc/nfcee_access.xml
 
 # GPS
 PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/config/gps/gps.conf:system/etc/gps.conf \
     $(COMMON_PATH)/config/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf
 
 #################### VENDOR ######################
